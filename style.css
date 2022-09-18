@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
+
+body {
+    background-color: lightblue;
+    font-family: 'Helvetica';
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box {
+    padding: auto;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.grid {
+    display: flex;
+    height: 70vh;
+    max-width: 1000px;
+    height: 650px;
+    width: 650px;
+    border: 5px solid ;
+    flex-direction: column;
+}
+
+.grid div {
+    display: flex;
+    padding: auto;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.grid div:hover {
+    background-color: blue;
+}
+
+.grid div div {
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: red;
+    display: flex;
+    padding: auto;
+    width: max-content;
+    height: max-content;
+}
+
+.grid div div:hover {
+    background-color: blue;
+}
+
+.controls {
+    display: flex;
+    gap: 0.5rem;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 5px;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-weight: 600;
+    border-bottom: 2px solid hsl(0, 0%, 70%);
+}
+
+.btn:active {
+    border-top: 2px solid hsl(0, 0%, 90%);
+    border-bottom: none;
+    background-color: hsl(0, 0%, 85%);
+}
